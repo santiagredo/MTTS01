@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Header } from './Components/Header';
+import { LoginPage } from './Components/LoginPage';
+import { Logo } from './Components/Logo';
 
 function App() {
 
   return (
     <React.Fragment>
-      <h1 className='w-full bg-red-100 flex justify-center'>
-        Test
-      </h1>
+      <Header/>
+      <Logo/>
+      <LoginPage/>
     </React.Fragment>
   )
 }
