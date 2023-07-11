@@ -1,8 +1,10 @@
 import React from "react";
 
-
+import { Link, useNavigate } from "react-router-dom"
 
 export function LoginPage () {
+
+    const navigate = useNavigate() 
 
     return (
         <main className="w-full flex justify-center flex-col h-screen bg-black">
@@ -25,8 +27,8 @@ export function LoginPage () {
                 </div>
             </form>
 
-            <a href="Sign up" className="text-white mx-auto my-1 hover:text-green-500">Sign up</a>
+            <Link to="/signup" className="text-white mx-auto my-1 hover:text-green-500">Sign up</Link>
             <a href="Sign up" className="text-white mx-auto my-1 hover:text-green-500">Forgot your password?</a>
         </main>
     );
-};
+}

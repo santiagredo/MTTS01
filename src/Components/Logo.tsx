@@ -1,12 +1,12 @@
 
-
-
+const MainLogo = new URL ("../assets/Log.png", import.meta.url).href
 
 export function Logo () {
 
     return (
-        <figure>
-            <h1>Aqui va el logo</h1>
+        <figure className="flex justify-center items-center mx-auto bg-black w-80">
+            <img src={MainLogo} className="W-full h-full"/>
         </figure>
     );
-};
+}
+
